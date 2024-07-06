@@ -1,5 +1,6 @@
 package com.example.Minor1;
 
+import java.util.Collections;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.data.mongo.MongoDataAutoConfiguration;
@@ -19,7 +20,7 @@ public class Minor1Application{
 
 	public static void main(String[] args) throws Exception {
 		SpringApplication app = new SpringApplication(FileSystem.class);
-//		app.setDefaultProperties(Collections.singletonMap("server.port", "8082"));
+		app.setDefaultProperties(Collections.singletonMap("server.port", "8080"));
 		app.run(args);
 		FileSystem fs = new FileSystem();
 		String obj = fs.mainLogic();

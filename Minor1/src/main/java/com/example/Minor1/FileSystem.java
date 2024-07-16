@@ -154,7 +154,7 @@ public class FileSystem {
                     if( per[0]==1 || per[1]==1 )
                     {
                         int in = index.get(s[1]);
-                        int permi = basetodec(getDataFromFileEntry(in, offpermi, 1));
+                        // int permi = basetodec(getDataFromFileEntry(in, offpermi, 1));
                         StringBuilder con = new StringBuilder();
                         readFile(s[1],con);
                         System.out.println(con);
